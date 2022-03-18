@@ -93,7 +93,11 @@ _run() {
     while true; do
         sleep "${BACKUP_INTERVAL:-42}"
         if [ -n "$BACKUP_INTERVAL" ]; then
-            _backup && _healthy || _unhealthy
+            if _backup; then
+                _healthy
+            else
+                _unhealthy
+            fi
         fi
     done
 }
