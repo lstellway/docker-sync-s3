@@ -30,7 +30,7 @@ The entrypoint command takes two arguments:
 1. **"Alpha"** - The data location to backup
 2. **"Beta"** - The destination to backup data to
 
-**Pull the docker image**
+**Pull the [docker image](https://hub.docker.com/r/lstellway/sync-s3)**
 
 ```sh
 docker pull lstellway/sync-s3
@@ -89,6 +89,12 @@ docker kill --signal=USR1 <container-name-or-id>
 ```sh
 docker kill --signal=USR2 <container-name-or-id>
 ```
+
+## Resources
+
+-   [GitHub Repository](https://github.com/lstellway/docker-sync-s3)
+-   [Docker Hub Page](https://hub.docker.com/r/lstellway/sync-s3)
+-   [Issues](https://github.com/lstellway/docker-sync-s3/issues)
 
 ## Credits
 
